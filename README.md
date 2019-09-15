@@ -1,0 +1,2 @@
+# ConfigItem
+ConfigにItemStackをputしたりできるプラグイン完全自分用
