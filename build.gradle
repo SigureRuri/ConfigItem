@@ -46,3 +46,7 @@ buildscript {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
+
+jar {
+    from { configurations.embed.collect { it.isDirectory() ? it : zipTree(it) } }
+}
