@@ -1,0 +1,5 @@
+name: ConfigItem
+version: @version@
+main: com.github.sigureruri.configitem.ConfigItem
+api-version: 1.13
+authors: [SigureRuri]
