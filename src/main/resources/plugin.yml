@@ -3,3 +3,26 @@ version: @version@
 main: com.github.sigureruri.configitem.ConfigItem
 api-version: 1.13
 authors: [SigureRuri]
+
+commands:
+  configitem:
+    description: This is configitem command.
+    usage: /<command>
+
+permissions:
+  configitem.command.*:
+    description: All command for configitem
+    default: op
+    children:
+      configitem.command.put: true
+      configitem.command.get: true
+      configitem.command.give: true
+  configitem.command.put:
+    description: Put command for configitem
+    default: op
+  configitem.command.get:
+    description: Get command for configitem
+    default: op
+  configitem.command.give:
+    description: Give command for configitem
+    default: op
